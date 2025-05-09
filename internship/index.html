@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Career Compass - Find Your Path</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <h1>Career<span>Compass</span></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#paths">Paths</a></li>
+          <li><a href="#colleges">Colleges</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section active">
+      <div class="container">
+        <div class="hero">
+          <div class="hero-content">
+            <h2>Discover Your Ideal Career Path</h2>
+            <p>Not sure whether to pursue B.Tech or a Degree? We'll help you make an informed decision based on your interests and aptitude.</p>
+            <button class="btn primary" id="start-quiz-btn">Start Quiz</button>
+          </div>
+          <div class="hero-image">
+            <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Students discussing career options">
+          </div>
+        </div>
+        
+        <div class="features">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-question-circle"></i>
+            </div>
+            <h3>Interest Quiz</h3>
+            <p>Answer a few simple questions about your interests and aptitude.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Path Recommendation</h3>
+            <p>Get personalized recommendations for B.Tech or Degree courses.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <h3>College Options</h3>
+            <p>Explore top colleges offering your recommended programs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz" class="section">
+      <div class="container">
+        <h2>Career Interest Quiz</h2>
+        <p class="section-description">Answer these questions honestly to help us recommend the best educational path for you.</p>
+        
+        <div class="quiz-container">
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          
+          <div class="quiz-question active" data-question="1">
+            <h3>Question 1</h3>
+            <p>Do you enjoy solving complex mathematical or logical problems?</p>
+            <div class="options">
+              <label class="option">
+                <input type="radio" name="q1" value="tech"> Definitely, I love challenging problems
+              </label>
+              <label class="option">
+                <input type="radio" name="q1" value="neutral"> Sometimes, depending on the subject
+              </label>
+              <label class="option">
+                <input type="radio" name="q1" value="degree"> Not really, I prefer other types of challenges
+              </label>
+            </div>
+          </div>
+          
+          <div class="quiz-question" data-question="2">
+            <h3>Question 2</h3>
+            <p>How do you feel about hands-on laboratory work and experiments?</p>
+            <div class="options">
+              <label class="option">
+                <input type="radio" name="q2" value="tech"> I enjoy practical experimentation and building things
+              </label>
+              <label class="option">
+                <input type="radio" name="q2" value="neutral"> It can be interesting sometimes
+              </label>
+              <label class="option">
+                <input type="radio" name="q2" value="degree"> I prefer theoretical learning over practical experiments
+              </label>
+            </div>
+          </div>
+          
+          <div class="quiz-question" data-question="3">
+            <h3>Question 3</h3>
+            <p>Are you interested in how machines, gadgets, or software works?</p>
+            <div class="options">
+              <label class="option">
+                <input type="radio" name="q3" value="tech"> Very interested, I often wonder how things function
+              </label>
+              <label class="option">
+                <input type="radio" name="q3" value="neutral"> Somewhat interested
+              </label>
+              <label class="option">
+                <input type="radio" name="q3" value="degree"> Not particularly interested
+              </label>
+            </div>
+          </div>
+          
+          <div class="quiz-question" data-question="4">
+            <h3>Question 4</h3>
+            <p>Do you enjoy analyzing data, conducting research, or writing reports?</p>
+            <div class="options">
+              <label class="option">
+                <input type="radio" name="q4" value="degree"> Yes, I enjoy analytical and research work
+              </label>
+              <label class="option">
+                <input type="radio" name="q4" value="neutral"> It depends on the subject matter
+              </label>
+              <label class="option">
+                <input type="radio" name="q4" value="tech"> I prefer practical application over research
+              </label>
+            </div>
+          </div>
+          
+          <div class="quiz-question" data-question="5">
+            <h3>Question 5</h3>
+            <p>How do you feel about a career that requires continuous learning of new technologies?</p>
+            <div class="options">
+              <label class="option">
+                <input type="radio" name="q5" value="tech"> Excited - I love learning new technologies
+              </label>
+              <label class="option">
+                <input type="radio" name="q5" value="neutral"> I'm open to it if necessary
+              </label>
+              <label class="option">
+                <input type="radio" name="q5" value="degree"> I prefer more stable knowledge that doesn't change rapidly
+              </label>
+            </div>
+          </div>
+          
+          <div class="quiz-question" data-question="6">
+            <h3>Question 6</h3>
+            <p>Which of these skills do you believe you excel at the most?</p>
+            <div class="options">
+              <label class="option">
+                <input type="radio" name="q6" value="tech"> Problem-solving and technical skills
+              </label>
+              <label class="option">
+                <input type="radio" name="q6" value="neutral"> A balance of technical and communication skills
+              </label>
+              <label class="option">
+                <input type="radio" name="q6" value="degree"> Communication, creativity, and interpersonal skills
+              </label>
+            </div>
+          </div>
+          
+          <div class="quiz-controls">
+            <button class="btn secondary" id="prev-btn" disabled>Previous</button>
+            <button class="btn primary" id="next-btn">Next</button>
+            <button class="btn primary" id="submit-quiz-btn" style="display: none;">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="section">
+      <div class="container">
+        <h2>Your Results</h2>
+        <div class="results-content">
+          <div class="result-card">
+            <div class="result-header">
+              <h3>Based on your responses, we recommend:</h3>
+              <div class="recommendation" id="recommendation">
+                <!-- Filled by JavaScript -->
+              </div>
+            </div>
+            <div class="result-details">
+              <p>Your answers indicate you might thrive in a <span id="path-description"></span></p>
+              <div class="action-buttons">
+                <button class="btn primary" id="explore-branches-btn">Explore Branches</button>
+                <button class="btn secondary" id="retake-quiz-btn">Retake Quiz</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section id="paths" class="section">
+      <div class="container">
+        <h2>Education Paths & Branches</h2>
+        <p class="section-description" id="path-intro">Select a path to explore available branches.</p>
+        
+        <div class="path-selector">
+          <button class="path-btn" data-path="btech">B.Tech</button>
+          <button class="path-btn" data-path="degree">Degree</button>
+        </div>
+        
+        <div class="branches-container">
+          <div class="path-branches" id="btech-branches">
+            <h3>B.Tech Branches</h3>
+            <div class="branches-grid">
+              <div class="branch-card" data-branch="cse">
+                <div class="branch-icon">
+                  <i class="fas fa-laptop-code"></i>
+                </div>
+                <h4>Computer Science Engineering (CSE)</h4>
+                <p>Focus on computing, programming, and software development.</p>
+              </div>
+              <div class="branch-card" data-branch="ece">
+                <div class="branch-icon">
+                  <i class="fas fa-microchip"></i>
+                </div>
+                <h4>Electronics & Communication (ECE)</h4>
+                <p>Study of electronic devices, circuits, and communication systems.</p>
+              </div>
+              <div class="branch-card" data-branch="eee">
+                <div class="branch-icon">
+                  <i class="fas fa-bolt"></i>
+                </div>
+                <h4>Electrical & Electronics (EEE)</h4>
+                <p>Deals with electricity, electronics, and electromagnetism.</p>
+              </div>
+              <div class="branch-card" data-branch="civil">
+                <div class="branch-icon">
+                  <i class="fas fa-hard-hat"></i>
+                </div>
+                <h4>Civil Engineering</h4>
+                <p>Design and construction of physical and naturally built environments.</p>
+              </div>
+              <div class="branch-card" data-branch="mechanical">
+                <div class="branch-icon">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <h4>Mechanical Engineering</h4>
+                <p>Design, analysis, and manufacturing of mechanical systems.</p>
+              </div>
+              <div class="branch-card" data-branch="ai">
+                <div class="branch-icon">
+                  <i class="fas fa-robot"></i>
+                </div>
+                <h4>AI & Data Science</h4>
+                <p>Machine learning, artificial intelligence, and data analytics.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="path-branches" id="degree-branches">
+            <h3>Degree Branches</h3>
+            <div class="branches-grid">
+              <div class="branch-card" data-branch="bsc-mpc">
+                <div class="branch-icon">
+                  <i class="fas fa-atom"></i>
+                </div>
+                <h4>B.Sc. (MPC)</h4>
+                <p>Mathematics, Physics, and Chemistry focused degree program.</p>
+              </div>
+              <div class="branch-card" data-branch="bsc-bzc">
+                <div class="branch-icon">
+                  <i class="fas fa-microscope"></i>
+                </div>
+                <h4>B.Sc. (BZC)</h4>
+                <p>Botany, Zoology, and Chemistry focused degree program.</p>
+              </div>
+              <div class="branch-card" data-branch="bcom">
+                <div class="branch-icon">
+                  <i class="fas fa-chart-line"></i>
+                </div>
+                <h4>B.Com</h4>
+                <p>Commerce, accounting, and business administration studies.</p>
+              </div>
+              <div class="branch-card" data-branch="ba">
+                <div class="branch-icon">
+                  <i class="fas fa-book"></i>
+                </div>
+                <h4>BA</h4>
+                <p>Studies in humanities, social sciences, and languages.</p>
+              </div>
+              <div class="branch-card" data-branch="bba">
+                <div class="branch-icon">
+                  <i class="fas fa-briefcase"></i>
+                </div>
+                <h4>BBA</h4>
+                <p>Business administration and management studies.</p>
+              </div>
+              <div class="branch-card" data-branch="bca">
+                <div class="branch-icon">
+                  <i class="fas fa-desktop"></i>
+                </div>
+                <h4>BCA</h4>
+                <p>Computer applications and information technology studies.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Colleges Section -->
+    <section id="colleges" class="section">
+      <div class="container">
+        <h2>Top Colleges</h2>
+        <p class="section-description">Explore top colleges for your selected branch.</p>
+        
+        <div class="colleges-container">
+          <h3 id="colleges-for-branch">Select a branch to view colleges</h3>
+          <div class="college-list" id="college-list">
+            <!-- Colleges will be populated by JavaScript -->
+          </div>
+          <div class="back-to-branches">
+            <button class="btn secondary" id="back-to-branches-btn">Back to Branches</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact & Feedback</h2>
+        <p class="section-description">Have questions or feedback? Reach out to us!</p>
+        
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>We're here to help you make the best decision for your future. Reach out with any questions!</p>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>support@careercompass.edu</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+91 9876543210</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>123 Education Street, Career City</span>
+            </div>
+          </div>
+          
+          <div class="contact-form">
+            <h3>Send us a Message</h3>
+            <form id="feedback-form">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                  <option value="inquiry">General Inquiry</option>
+                  <option value="feedback">Website Feedback</option>
+                  <option value="suggestion">Career Suggestion</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h2>Career<span>Compass</span></h2>
+          <p>Guiding your educational journey</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#paths">Education Paths</a></li>
+            <li><a href="#colleges">Colleges</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Connect With Us</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 CareerCompass. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
